@@ -1,4 +1,13 @@
 .main {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     row-gap: 88px;
+
+    @include mobile {
+        row-gap: 50px;
+    }
+
+    @include mobile-sm {
+        row-gap: 24px;
+    }
 }

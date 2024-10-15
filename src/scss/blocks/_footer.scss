@@ -9,4 +9,13 @@
 	line-height: 180%;
 	text-transform: capitalize;
 	color: var(--neutral-graycbcbcb);
+
+	@include mobile {
+		margin-top: 44px;
+	}
+
+	@include mobile-sm {
+		margin-top: 24px;
+		padding: 8px 0px 8px 20px;
+	}
 }

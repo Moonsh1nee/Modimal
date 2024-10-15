@@ -1,5 +1,8 @@
 .header {
+	position: relative;
+	z-index: 200;
 	padding: 16px 0 18px;
+	background-color: var(--white);
 
 	&__row {
 		@include flex-center-spaceBetween;
@@ -7,6 +10,38 @@
 
 	&__logo {
 		flex-shrink: 0;
+
+		@media (max-width: 400px) {
+			width: 160px;
+		}
+
+		@media (max-width: 310px) {
+			width: 140px;
+		}
+	}
+
+	&__nav {
+		margin-left: auto;
+	}
+
+	&__account {
+		&--first {
+			margin-left: auto;
+			margin-right: 24px;
+
+			@include tablet {
+				margin-right: 12px;
+			}
+
+			@include mobile {
+				order: -1;
+				margin-left: 0;
+			}
+		}
+	}
+
+	@include mobile {
+		padding: 4px 0 8px;
 	}
 }
 

@@ -13,10 +13,56 @@ a.btn {
     text-transform: capitalize;
     text-align: center;
 
+    &:hover {
+        background: var(--neutral-grayededed);
+    }
+
+    &:focus {
+        background: var(--neutral-graydfdfdf);
+    }
+
+    &:disabled {
+        background: var(--neutral-gray606060);
+        color: var(--neutral-grayadadad);
+    }
+
+    @include mobile {
+        padding: 8px 9px;
+        min-width: unset;
+    }
+
+    &--adaptive {
+        @include mobile {
+            padding: 8px 16px;
+        }
+    }
+
     &--small {
         min-width: unset;
         padding: 8px 15px;
         line-height: 215%;
         color: var(--primary-primary-600);
+    }
+}
+
+a.btn-outline,
+.btn-outline {
+    border: 1px solid var(--primary-primary-600);
+    padding: 8px 16px;
+    height: 40px;
+
+    @include flex-center;
+    justify-content: center;
+    gap: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--primary-primary-600);
+
+    &:hover {
+        color: var(--primary-primary-700);
     }
 }

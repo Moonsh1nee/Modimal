@@ -11,10 +11,22 @@
 			text-transform: capitalize;
 			text-align: center;
 			color: var(--neutral-gray404040);
+
+			@media (max-width: 1000px) {
+				font-size: 16px;
+			}
 		}
 
 		.active {
 			color: #000;
 		}
+
+		@include tablet {
+			column-gap: 16px;
+		}
+	}
+
+	@include mobile {
+		display: none;
 	}
 }

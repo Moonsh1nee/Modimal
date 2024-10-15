@@ -2,5 +2,13 @@
     &__title-wrapper {
         @include flex-center-spaceBetween;
         margin-bottom: 24px;
+
+        @include mobile {
+            margin-bottom: 16px;
+        }
+
+        @include mobile-sm {
+            margin-bottom: 8px;
+        }
     }
 }

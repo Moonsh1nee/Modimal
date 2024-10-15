@@ -1,7 +1,6 @@
 <header class="header">
   <div class="container">
     <div class="header__row">
-
       <div class="header__logo">
         <a href="#!" class="logo">
           <img src="../../img/logo/logo.svg" alt="Modimal logo" />
@@ -17,8 +16,13 @@
         </ul>
       </div>
 
-      <div class="header__account">
+      <div class="header__account header__account--first">
         <ul class="account">
+          <li class="account__menu">
+            <button class="mobile-nav-btn">
+              <div class="nav-icon"></div>
+            </button>
+          </li>
           <li>
             <a href="#!">
               <svg class="icon icon--search">
@@ -26,13 +30,17 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="account__person">
             <a href="#!">
               <svg class="icon icon--person">
                 <use href="./img/svgsprite/sprite.symbol.svg#person"></use>
               </svg>
             </a>
           </li>
+        </ul>
+      </div>
+      <div class="header__account">
+        <ul class="account">
           <li>
             <a href="#!">
               <svg class="icon icon--favorite">
@@ -49,7 +57,7 @@
           </li>
         </ul>
       </div>
-      @@include('mobile-nav.html')
     </div>
   </div>
 </header>
+@@include('mobile-nav.html')

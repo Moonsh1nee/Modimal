@@ -33,5 +33,31 @@
             line-height: 180%;
             text-transform: capitalize;
         }
+
+        @include mobile {
+            max-width: 200px;
+
+            .hero__title {
+                font-size: 26px;
+            }
+        }
+
+        @include mobile-sm {
+            max-width: 167px;
+
+            .hero__title {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @include mobile {
+        padding-bottom: 60px;
+        background-position: -200px 0;
+    }
+
+    @include mobile-sm {
+        padding-bottom: 16px;
+        background-position: -300px 0;
     }
 }

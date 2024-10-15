@@ -15,4 +15,28 @@
         row-gap: 64px;
         justify-content: space-between;
     }
+
+    @include mobile {
+        &__title {
+            margin-bottom: 12px;
+        }
+
+        &__cols {
+            column-gap: 16px;
+        }
+
+        &__col {
+            row-gap: 44px;
+        }
+    }
+
+    @include mobile-sm {
+        &__title {
+            margin-bottom: 8px;
+        } 
+
+        &__col {
+            row-gap: 24px;
+        }
+    }
 }

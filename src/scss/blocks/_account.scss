@@ -10,4 +10,22 @@
             background: var(--neutral-grayededed);
         }
     }
+
+    @include tablet {
+        column-gap: 12px;
+    }
+
+    &__menu {
+        display: none;
+
+        @include mobile {
+            display: block;
+        }
+    }
+
+    &__person {
+        @include mobile {
+            display: none;
+        }
+    }
 }
