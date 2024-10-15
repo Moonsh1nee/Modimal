@@ -18,6 +18,9 @@
 }
 
 .icon--favorite {
+	fill: var(--white);
 	stroke: var(--black);
 	stroke-width: 2;
+
+	transition: all .3s ease-in-out;
 }

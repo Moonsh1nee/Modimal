@@ -3,10 +3,4 @@
         @include flex-center-spaceBetween;
         margin-bottom: 24px;
     }
-
-    &__cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 24px;
-    }
 }

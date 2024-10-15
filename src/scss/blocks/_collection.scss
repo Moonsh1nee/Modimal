@@ -1,0 +1,18 @@
+.collection {
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 24px;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        row-gap: 64px;
+        justify-content: space-between;
+    }
+}
