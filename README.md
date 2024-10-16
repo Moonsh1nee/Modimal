@@ -1,10 +1,12 @@
-# Lending of Modimal
+# Modimal
+## _Landing page of Modimal_
 
-Технологии:
+[__Watch the demo__](https://moonsh1nee.github.io/Modimal/)
 
--HTML,
--CSS,
--Js,
--Gulp
+## Technologies:
 
-[Смотреть демо](https://moonsh1nee.github.io/Modimal/)
+- HTML
+- CSS
+- JS
+- Swiper
+- Gulp
